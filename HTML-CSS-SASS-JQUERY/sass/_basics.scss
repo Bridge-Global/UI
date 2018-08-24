@@ -1,0 +1,18 @@
+body{
+	background:$primary-color;
+	font-weight:100;
+	background: rgb(24,35,61);
+	background: -moz-linear-gradient(45deg,  rgba(24,35,61,1) 0%, rgba(14,53,67,1) 27%, rgba(7,62,69,1) 64%, rgba(15,35,55,1) 100%);
+	background: -webkit-linear-gradient(45deg,  rgba(24,35,61,1) 0%,rgba(14,53,67,1) 27%,rgba(7,62,69,1) 64%,rgba(15,35,55,1) 100%);
+	background: linear-gradient(45deg,  rgba(24,35,61,1) 0%,rgba(14,53,67,1) 27%,rgba(7,62,69,1) 64%,rgba(15,35,55,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18233d', endColorstr='#0f2337',GradientType=1 );
+	background-attachment:fixed;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+a{
+	color:$secondary-color;
+}

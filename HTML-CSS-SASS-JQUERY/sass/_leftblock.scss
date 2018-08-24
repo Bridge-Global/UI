@@ -1,0 +1,104 @@
+.form-block{
+	background:$form-bg;
+	position:fixed;
+	left:-100%;
+	top:0;
+	bottom:0;
+	width:400px;
+	padding:15px;
+	overflow:auto;
+	opacity:0;
+	z-index:11;
+
+	@include animation;
+
+	.ready & {
+		left:0;
+		opacity:1;
+	}
+
+	.search-start &{
+		left:-100%;
+		@include animation(0.1s);
+	}
+
+	.menuClicked &{
+		left:0;
+		@include boxshadow;
+		z-index:600;
+	}
+
+	
+
+	h2{
+		font-size:$primary-heading;
+		color:$secondary-color;
+		margin:0;
+		font-weight:100;
+	}
+
+	.row{
+		margin-bottom:0;
+	}
+
+	.input-field{
+
+		label{
+			color:$primary-color;
+		}
+	}
+
+	.btn-large{
+		background:$secondary-color;
+	}
+
+	.seperation{
+		background:url(../images/or.png) no-repeat center center;
+		height:60px;
+		margin:30px -15px;
+	}
+
+	
+}
+
+.form-block-control{
+	position:fixed;
+	left:-100%;
+	bottom:0;
+	width:50px;
+	height:50px;
+	z-index:10;
+	background:$secondary-color;
+	color:$white;	
+	cursor:pointer;
+	text-align:center;
+	color:$primary-color;
+	padding-top:15px;
+
+	@include boxshadow;
+	@include animation;
+
+
+	.search-start &{
+		left:0;
+		@include animation(0.1s);
+		color:$white;
+	}
+
+	.menuClicked &{
+		left:400px;
+
+		.r{
+			display:none;
+		}
+
+		.l{
+			display:block
+		}
+	}
+
+	.l{
+		display:none;
+	}
+}
+
